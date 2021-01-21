@@ -1,4 +1,3 @@
-# HTMLpro
-gb htmlcsspro course
+[GeekBrains](https://geekbrains.ru/) HTML/CSS Professional course
 
-![Альтернативный текст](/mrkdimg/layoutBlocks.png)
+![blocks](/mrkdimg/layoutBlocks.png)
