@@ -14,12 +14,15 @@
     display: flex;
     padding: 0 15% 0 15%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-content {
-    min-height: 764px;
+    min-height: 474px;
     background: #F1E4E6;
-    display: flex;
+    padding: 290px 0 0 864px;
+    background-image: url("img/Layer_57-removebg-preview\ 1.png");
+    background-repeat: no-repeat;
 }
 
 .nav-left-part{
@@ -35,7 +38,8 @@
 }
 
 .header-text {
-    border: left solid #F16D7F;
+    border-left: 12px solid #F16D7F;
+    padding: 0 0 0 16px;
 }
 
 .top-header-text {
@@ -56,4 +60,74 @@
     line-height: 38px;
     letter-spacing: 0em;
     text-align: left;
+}
+
+.bottom-header-text span {
+    color: #F16D7F;
+}
+
+.main-content {
+    padding: 0 15% 0 15%;
+}
+
+.offers {
+    min-height: 470px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 65px 0 0 0;
+}
+
+.offer-item {
+    background-color: rgba(33, 22, 22, 0.7) ;
+    background-repeat: no-repeat; 
+    flex-basis: 360px; 
+    min-height: 155px; 
+    background-blend-mode: multiply; 
+    padding: 105px 0 0 0;
+    margin-bottom: 30px;
+}
+
+.offer-for-woman {
+    background-image: url("img/woman.png"); 
+}
+
+.offer-for-man {
+    background-image: url("img/man.png");  
+}
+
+.offer-for-kids { 
+    background-image: url("img/kids.png");   
+}
+
+.offer-accesories {
+    background-color: rgba(33, 22, 22, 0.7) ;
+    background-image: url("img/acces.png"); 
+    background-repeat: no-repeat; 
+    flex-basis: 100%;
+    min-height: 115px; 
+    background-blend-mode: multiply; 
+    padding: 65px 0 0 0;    
+}
+
+.offer-top-text {
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #F1E4E6;
+}
+
+.offer-bot-text {
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #F16D7F;;
 }
