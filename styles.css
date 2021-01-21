@@ -19,6 +19,7 @@
 .header-content {
     min-height: 764px;
     background: #F1E4E6;
+    display: flex;
 }
 
 .nav-left-part{
