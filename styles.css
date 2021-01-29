@@ -9,13 +9,15 @@
     margin: 0 auto;
 }
 
+/* header */
+
 .navigation {
     min-height: 75px;
-    background: #222222;
     display: flex;
     padding: 0 14% 0 14%;
     justify-content: space-between;
     align-items: center;
+    background: #222222;
 }
 
 .header-content {
@@ -34,6 +36,7 @@
 .nav-right-part{
     display: flex;
     align-items:flex-end;
+    position: relative;
 }
 
 .nav-right-margin  {
@@ -72,6 +75,27 @@
 .main-content {
     padding: 0 14% 0 14%;
 }
+
+.menu2 {
+    width: 232px;
+    height: 764px;
+    position: absolute;
+    background: red;
+    left: 268px;
+    top: 75px;
+    
+    /* display: none; */
+}
+
+.menu2 a {
+    display: block;
+}
+
+.profile:hover ~ .menu2{
+    display: block;
+}
+
+/* end header */
 
 /* offers */
 
@@ -313,7 +337,7 @@
     min-height: 448px;
     display: flex;
     justify-content: space-between;
-    padding: 150px 327px 0 228px;
+    padding: 97px 327px 0 228px;
     box-sizing: border-box;
     background-image: url("img/Layer\ 41.png");
     background-color:rgba(244, 244, 244, 0.7); ;
@@ -323,6 +347,11 @@
 
 .subs-left {
     max-width: 360px;
+    background-image: url("img/baba.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 126px 0 0 0;
+    text-align: center;
 }
 
 .subs-left span {
@@ -331,7 +360,8 @@
 
 .subs-right {
     max-width: 370px;
-    text-align: center;    
+    text-align: center;
+    padding: 53px 0 0 0;    
 }
 
 .subs-right span{
