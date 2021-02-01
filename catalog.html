@@ -17,9 +17,12 @@
                     <div class="logo nav-right-margin ">
                         <img src="img/logo.png" alt="logo">
                     </div> 
-                    <div class="find">
-                        <img src="img/search.png" alt="search">
-                    </div>
+                    <form action="search" class="search-icon-form">
+                        <label for="search" class="search-icon-form__label">
+                            <img src="img/search.png" alt="search">    
+                        </label>
+                        <input class="search-icon-form__input" id="search" type="search">
+                    </form> 
                 </div>
                 
                 <nav class="nav-right-part">
@@ -33,13 +36,35 @@
                     <div class="cart">
                         <img src="img/cart.png" alt="cart">
                     </div>
-                    <div class="menu2" id="menu">
-                        <span>menu</span>  
-                        <span>man</span> 
-                        <a href="">Accessories</a>
-                        <a href="">Bags</a>
-                        <a href="">Denim</a>
-                    </div>
+                    <ul class="menu"> MENU
+                        <li >
+                            <ul class="menu-head">MAN
+                                <li class="menu-item">Accessories</li>
+                                <li class="menu-item">Bags</li>
+                                <li class="menu-item">Denim</li>
+                                <li class="menu-item">T-Shirts</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="menu-head">WOMAN
+                                <li class="menu-item">Accessories</li>
+                                <li class="menu-item">Jackets & Coats</li>
+                                <li class="menu-item">Polos</li>
+                                <li class="menu-item">T-Shirts</li>
+                                <li class="menu-item">Shirts</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="menu-head">KIDS
+                                <li class="menu-item">Accessories</li>
+                                <li class="menu-item">Jackets & Coats</li>
+                                <li class="menu-item">Polos</li>
+                                <li class="menu-item">T-Shirts</li>
+                                <li class="menu-item">Shirts</li>
+                                <li class="menu-item">Bags</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </nav>
                 
             </div>
@@ -63,65 +88,143 @@
                     <div class="catalog-header">
                         <span class="catalog-header-h">FILTER</span>
                         <div class="catalog-header-filter-items">
-                            <span class="catalog-header-filter-item">
-                                TRENDING NOW    
+                            <span class="catalog-header-filter-item">                                
+                                TRENDING NOW                            
                             </span>
-                            <span class="catalog-header-filter-item">
+                            <div class="catalog-header-filter-item">                             
                                 SIZE 
-                            </span> 
-                            <span class="catalog-header-filter-item">
+                            </div>
+                            <div class="catalog-header-filter-item">
                                 PRICE
-                            </span>    
+                            </div>         
                         </div>
 
                     </div>
                     
                     
-                    <div class="catalog-items">
-                        <div class="catalog-item">
-                            <img src="img/man2.png" alt="man2">
-                            <div class="catalog-item-text">
+                    <div class="product-items">
+                        <div class="product-item">
+                            <div class="product-item-wrp">
+                                <img src="img/man2.png" alt="man2">
+                                <button class="product-item-addtocart">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span>Add to Cart</span>    
+                                </button> 
+                            </div>
+                            <div class="product-item-text">
                                 <h2>ELLERY X M'O CAPSULE</h2>
                                 <p class="desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                                 <p class="price">$52.00</p>
                             </div>
-                        
+                            
                         </div>
-                        <div class="catalog-item">
-                            <img src="img/woman2.png" alt="woman2">
-                            <div class="catalog-item-text">
-                                <h2>ELLERY X M'O CAPSULE</h2>
-                                <p class="desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                                <p class="price">$52.00</p>
-                            </div>
-                        </div>
-                        <div class="fcatalogitem">
-                            <div><img src="img/man3.png" alt="man3"></div>
-                            <div class="catalog-item-text">
-                                <h2>ELLERY X M'O CAPSULE</h2>
-                                <p class="desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                                <p class="price">$52.00</p>
-                            </div>
-                        </div>
-                        <div class="catalog-item">
-                            <img src="img/man4.png" alt="man4">
-                            <div class="catalog-item-text">
-                                <h2>ELLERY X M'O CAPSULE</h2>
-                                <p class="desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                                <p class="price">$52.00</p>
-                            </div>
-                        </div>
-                        <div class="catalog-item">
-                            <img src="img/woman3.png" alt="woman3">
-                            <div class="catalog-item-text">
+                        <div class="product-item">
+                            <div class="product-item-wrp">
+                                <img src="img/man5.png" alt="woman2">
+                                <button class="product-item-addtocart">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span>Add to Cart</span>    
+                                </button> 
+                            </div>    
+                            <div class="product-item-text">
                                 <h2>ELLERY X M'O CAPSULE</h2>
                                 <p class="desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                                 <p class="price">$52.00</p>
                             </div>
                         </div>
-                        <div class="catalog-item">
-                            <img src="img/woman4.png" alt="woman4">
-                            <div class="catalog-item-text">
+                        <div class="product-item">
+                            <div class="product-item-wrp">
+                                <img src="img/man3.png" alt="man3"> 
+                                <button class="product-item-addtocart">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span>Add to Cart</span>    
+                                </button> 
+                            </div>    
+                            <div class="product-item-text">
+                                <h2>ELLERY X M'O CAPSULE</h2>
+                                <p class="desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <p class="price">$52.00</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-item-wrp">
+                                <img src="img/man4.png" alt="man4">
+                                <button class="product-item-addtocart">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span>Add to Cart</span>    
+                                </button> 
+                            </div>    
+                            <div class="product-item-text">
+                                <h2>ELLERY X M'O CAPSULE</h2>
+                                <p class="desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <p class="price">$52.00</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-item-wrp">
+                                <img src="img/man6.png" alt="woman3">
+                                <button class="product-item-addtocart">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span>Add to Cart</span>    
+                                </button> 
+                            </div>    
+                            <div class="product-item-text">
+                                <h2>ELLERY X M'O CAPSULE</h2>
+                                <p class="desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <p class="price">$52.00</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-item-wrp">
+                                <img src="img/man7.png" alt="woman4">
+                                <button class="product-item-addtocart">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span>Add to Cart</span>    
+                                </button> 
+                            </div>    
+                            <div class="product-item-text">
+                                <h2>ELLERY X M'O CAPSULE</h2>
+                                <p class="desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <p class="price">$52.00</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-item-wrp">
+                                <img src="img/man8.png" alt="man4">
+                                <button class="product-item-addtocart">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span>Add to Cart</span>    
+                                </button> 
+                            </div>    
+                            <div class="product-item-text">
+                                <h2>ELLERY X M'O CAPSULE</h2>
+                                <p class="desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <p class="price">$52.00</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-item-wrp">
+                                <img src="img/man9.png" alt="woman3">
+                                <button class="product-item-addtocart">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span>Add to Cart</span>    
+                                </button> 
+                            </div>    
+                            <div class="product-item-text">
+                                <h2>ELLERY X M'O CAPSULE</h2>
+                                <p class="desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <p class="price">$52.00</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-item-wrp">
+                                <img src="img/man10.png" alt="woman4">
+                                <button class="product-item-addtocart">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span>Add to Cart</span>    
+                                </button> 
+                            </div>    
+                            <div class="product-item-text">
                                 <h2>ELLERY X M'O CAPSULE</h2>
                                 <p class="desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                                 <p class="price">$52.00</p>
@@ -129,7 +232,17 @@
                         </div>
                     </div>
                 </div>   
-                <div class="catalog-pagination"></div>
+                <div class="catalog-pagination">
+                    <a href="" class="catalog-pagination-step">&lt;</a>
+                    <span>1</span>
+                    <a href="" class="catalog-pagination-page">2</a>
+                    <a href="" class="catalog-pagination-page">3</a>
+                    <a href="" class="catalog-pagination-page">4</a>
+                    <a href="" class="catalog-pagination-page">5</a>
+                    <a href="" class="catalog-pagination-page">6</a>
+                    <a href="" class="catalog-pagination-page">...20</a>
+                    <a href="" class="catalog-pagination-step">&gt;</a>
+                </div> 
             </section> 
             <div class="spec-offers">
                 <div class="spec-offer-item">
