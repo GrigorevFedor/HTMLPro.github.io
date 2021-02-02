@@ -87,23 +87,17 @@
 }
 
 .top-header-text {
-    font-family: Lato;
     font-size: 48px;
     font-style: normal;
     font-weight: 900;
     line-height: 58px;
-    letter-spacing: 0em;
-    text-align: left;
 }
 
 .bottom-header-text {
-    font-family: Lato;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: 38px;
-    letter-spacing: 0em;
-    text-align: left;
 }
 
 .bottom-header-text span {
@@ -131,7 +125,6 @@
     font-style: normal;
     font-weight: 700;
     line-height: 17px;
-    letter-spacing: 0em; 
     list-style-type: none; 
 }
 
@@ -140,9 +133,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 17px;
-    letter-spacing: 0em;
     list-style-type: none;
-    
     color:#F16D7F;
 }
 
@@ -151,7 +142,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 17px;
-    letter-spacing: 0em;
     color: #6F6E6E;
     padding: 0 0 0 21px; 
 }
@@ -222,24 +212,18 @@
 }
 
 .offer-top-text {
-    font-family: Lato;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 19px;
-    letter-spacing: 0em;
-    text-align: center;
     color: #F1E4E6;
 }
 
 .offer-bot-text {
-    font-family: Lato;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 29px;
-    letter-spacing: 0em;
-    text-align: center;
     color: #F16D7F;;
 }
 
@@ -257,22 +241,18 @@
 }
 
 .featured-header h1 {
-    font-family: Lato;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: 36px;
-    letter-spacing: 0em; 
     margin-bottom: 6px; 
 }
 
 .featured-header p {
-    font-family: Lato;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 17px;
-    letter-spacing: 0em;
     color: #9F9F9F;
 }
 
@@ -282,40 +262,31 @@
 }
 
 .product-items h2 {
-    font-family: Lato;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
-    letter-spacing: 0em;
-    text-align: left;
     margin-bottom: 13px;
     color: #000000;
 }
 
-.desc {
-    font-family: Lato;
+.description {
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
     line-height: 17px;
-    letter-spacing: 0em;
-    text-align: left;
     margin-bottom: 18px;
     color: #5D5D5D;
-    ;
 }
 
 .price {
-    font-family: Lato;
+    max-width: 30px;
+
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #F16D7F;
-    
+    color: #F16D7F; 
 }
 
 .product-items {
@@ -347,15 +318,19 @@
 .product-item-addtocart {
     height: 43px;
     width: 138px;
+    margin-top: 49px;
+
     border: 1px solid #FFFFFF;
-    position: absolute;
-    left: 111px;
-    top: 188px;
     color: #FFFFFF;
     line-height: 43px;
+}
+
+.product-item-addtocart-absolute {
+    position: absolute;
+    left: 111px;
+    top: 139px;
     display: none;
     background: transparent;
-    
 }
 
 
@@ -367,7 +342,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 19px;
-    letter-spacing: 0em;
     color: #F26376;
     background: #FFF;
     margin-top: 15px;
@@ -384,7 +358,7 @@
 
 /* srecial offers */
 
-.spec-offers {
+.special-offers {
     min-height: 341px;
     background-color: #222224;
     display: flex;
@@ -396,7 +370,7 @@
 
 
 
-.spec-offer-item {
+.special-offer-item {
     max-width: 360px;
     color: #FBFBFB;
     background-repeat: no-repeat;
@@ -405,39 +379,36 @@
     text-align: center;
 }
 
-.spec-offer-item span {
+.special-offer-item span {
     display: block;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0em;
     margin: 0 0 16px 0;
 }
 
-.spec-offer-item span::first-letter {
+.special-offer-item span::first-letter {
     text-transform: uppercase;
 }
 
-.spec-offer-item p {
+.special-offer-item p {
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
     line-height: 17px;
-    letter-spacing: 0em;
-    
 }
 
-.spec-offer-item:nth-child(1) {
+.special-offer-item:nth-child(1) {
     background-image: url("img/delivery.png");
     
 }
 
-.spec-offer-item:nth-child(2) {
+.special-offer-item:nth-child(2) {
     background-image: url("img/dicount.png");
 }
 
-.spec-offer-item:nth-child(3) {
+.special-offer-item:nth-child(3) {
     background-image: url("img/assurance.png");
 }
 
@@ -457,7 +428,7 @@
     
 }
 
-.subs-left {
+.subscribe-left {
     max-width: 310px;
     background-image: url("img/baba.png");
     background-repeat: no-repeat;
@@ -469,34 +440,31 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0em;
 }
 
-.subs-left span {
+.subscribe-left span {
     font-style: italic;
 }
 
-.subs-right {
+.subscribe-right {
     max-width: 370px;
     text-align: center;
     padding: 53px 0 0 0;    
 }
 
-.subs-right span{
+.subscribe-right span{
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 40px;
-    letter-spacing: 0em;
     text-transform: uppercase;
 }
 
-.subs-right p{
+.subscribe-right p{
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    letter-spacing: 0em;
     text-transform: uppercase;
     margin: 0 0 32px 0;
 }
@@ -563,6 +531,10 @@
     justify-content: space-between;
 }
 
+.social-item {
+    text-decoration: none;
+}
+
 .social a{
     width: 32px;
     height: 32px;
@@ -622,15 +594,15 @@
     margin: 0 4px 0 4px;
 }
 
-.catalog-header {
+.catalog-filter {
     min-height: 132px;
-    padding: 51px 453px 0 0;
+    max-width: 555px;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
 }
 
-.catalog-header-h {
+.catalog-filter-header {
     display: block;
     font-size: 14px;
     font-style: normal;
@@ -639,11 +611,12 @@
     color: #000;
 }
 
-.catalog-header-filter-items {
+.catalog-filter-items {
     display: flex;
+    max-width: 500px;
 }
 
-.catalog-header-filter-item {
+.catalog-filter-item {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -682,3 +655,88 @@
 
 
 /* END CATALOG */
+
+/* PRODUCT */
+
+.top-pagination {
+    background: #F7F7F7;
+    background-image: url("img/woman5.png");
+    min-height: 777px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-description {
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: -65px;
+
+    background: #FFF;
+    border: 1px solid #EAEAEA;
+    padding: 65px 0 65px 0;
+    
+}
+
+.product-description-category {
+    display: block;
+    max-width: 555px;
+    margin-bottom: 12px;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 17px;
+    color: #F16D7F;
+}
+
+.product-description-name {
+    display: block;
+    max-width: 555px;
+    margin-bottom: 49px;
+    
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    color: #4D4D4D;
+}
+
+.product-description-text {
+    max-width: 555px;
+    margin-bottom: 32px;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 17px;
+    color: #4D4D4D;
+}
+
+.top-line {
+    border: none; 
+    margin-bottom: 12px;
+    height: 3px;
+    width: 63px;
+
+    background-color: #EF5B70; 
+    
+}
+
+.bottom-line {
+    border: none; 
+    height: 1px;
+    width: 641px;
+    margin-top: 65px;
+    margin-bottom: 65px;
+
+    background-color:#EAEAEA; 
+    
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* END PRODUCT */
