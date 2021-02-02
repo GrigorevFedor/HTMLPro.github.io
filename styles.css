@@ -28,19 +28,19 @@
     background-repeat: no-repeat;
 }
 
-.nav-left-part{
+.nav-left-part {
     display: flex;
     align-items:flex-end;
 }
 
-.nav-right-part{
+.nav-right-part {
     display: flex;
     align-items:flex-end;
     position: relative;
     min-height: 33px;
 }
 
-.nav-right-margin  {
+.nav-right-margin {
     margin: 0 41px 0 0;
 }
 
