@@ -1,0 +1,111 @@
+.catalog {
+
+    &-buybtn {
+        border: 1px solid #FFFFFF;
+        color: #FFFFFF;
+        line-height: 43px;
+        position: absolute;
+        left: 111px;
+        top: 188px;
+        display: none;
+        background: transparent;
+
+        &-absolute {
+            position: absolute;
+            left: 111px;
+            top: 139px;
+            display: none;
+            background: transparent;
+        }
+        
+    }
+   
+    &-header-content {
+        min-height: 148px;
+        background: #F8F3F4;
+        display: flex;
+        justify-content: space-between;
+        padding: 59px 230px 0 230px;
+        box-sizing: border-box;
+        
+        &-h {
+            display: block;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 29px;
+            color: #F16D7F;
+        }
+    }
+
+    &-pagination {
+        display: flex;
+        justify-content: space-between;
+        max-width: 283px;
+        margin: auto;
+        margin-bottom: 96px;
+
+        & span{
+            color: #EF5B70;
+        }
+    
+    
+        &-step {
+            text-decoration: none;
+            color:  #000;
+        }
+    
+        &-page{
+            text-decoration: none;
+            color: #E1E1E1;;
+        }
+        
+    }   
+}
+
+.breadcrumb {
+    display: flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 17px;
+ 
+    &-link {
+        cursor: pointer;
+        text-decoration: none;
+        color: #636363;
+    }
+
+    &-active {
+        font-weight: 700;
+        color: #F16D7F;
+    }
+
+    &-icon {
+        margin: 0 4px 0 4px;
+    }
+}
+
+
+
+
+.browse-items {
+    border: 1px solid #FF6A6A; 
+    padding: 14.5px 38.5px 14.5px 38.5px;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    color: #F26376;
+    background: #FFF;
+    margin-top: 15px;
+
+    &:hover:hover {
+        background: #F16D7F;
+        border: 1px solid #FF6A6A;
+        color: #FFF;
+        transition-duration: 80ms;
+    }
+}
+

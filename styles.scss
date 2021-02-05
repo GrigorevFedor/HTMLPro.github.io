@@ -1,0 +1,28 @@
+$mainwidth: 1600px;
+$color1: #F1E4E6;
+$color2: #222222;
+$color3: #FFF;
+$color4: #F16D7F;
+$mainfontfamily: Lato;
+
+@import "_header";
+@import "_footer";
+@import "_index";
+@import "_product";
+@import "_catalog";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $mainfontfamily;
+}
+
+.container {
+    max-width: $mainwidth;
+    margin: 0 auto;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}

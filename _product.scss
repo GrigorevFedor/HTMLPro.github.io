@@ -1,0 +1,210 @@
+$color3: #FFF;
+$color5: #F7E4E2;
+$color6: #000;
+$color7: #F8F8F8;
+
+.product {
+    &-buybtn {
+        border: 1px solid #F26376;
+        color: #F26376;
+        line-height: 43px;
+        background: transparent;
+
+        &-buybtn:hover {
+            background: #F16D7F;
+            border: 1px solid #FF6A6A;
+            color: #FFF;
+            transition-duration: 80ms;
+        }
+    }
+
+    &-items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        & h2 {
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+            margin-bottom: 13px;
+            color: $color6;
+        }
+    }
+
+    &-item {
+        background-color: $color5;
+        flex: 0 1 360px;
+        margin-bottom: 30px;
+        position: relative;
+
+        &-addtocart {
+            height: 43px;
+            width: 138px;
+
+            border: 1px solid $color3;
+            color: $color3;
+            line-height: 43px;
+        }
+
+        &-text {
+            padding: 26px 29px 20px 17px;
+            background: $color7;
+            text-align: left;
+        }
+
+        & img {
+            display:block;
+        }
+        
+        &-wrp:hover img{
+            filter: brightness(33%);
+            transition-duration: 80ms;
+        }
+        
+        &-wrp:hover button{
+            display: block;
+        }
+    }  
+
+    &-description {
+        text-align: center;
+        margin: auto;
+        position: relative;
+        top: -65px;
+
+        background: #FFF;
+        border: 1px solid #EAEAEA;
+        padding: 65px 0 65px 0;
+
+        &-category {
+            display: block;
+            max-width: 555px;
+            margin-bottom: 12px;
+    
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 17px;
+            color: #F16D7F;
+        }
+    
+        &-name {
+            display: block;
+            max-width: 555px;
+            margin-bottom: 49px;
+            
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 22px;
+            color: #4D4D4D;
+        }
+    
+        &-text {
+            max-width: 555px;
+            margin-bottom: 32px;
+    
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 17px;
+            color: #4D4D4D;
+        }
+        
+    }
+    
+    &-filter {
+        min-height: 132px;
+        max-width: 555px;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 51px 0 64px 0;
+
+        &-header {
+            display: block;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 17px;
+            color: #000;
+        }
+        // &-items {
+        //     display: flex;
+        // }
+
+        &-items {
+            display: flex;
+            max-width: 500px;
+            margin-bottom: 49px;
+        }
+
+        &-item {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17px;
+            color: #6F6E6E;
+            background-image: url("img/filterbutton.png");
+            background-repeat: no-repeat;
+            background-position: right 7px;
+            padding-right: 20px;
+            margin-right: 28px;
+        }
+    }
+}
+
+.description {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 17px;
+    margin-bottom: 18px;
+    color: #5D5D5D;
+}
+
+.price {
+    max-width: 30px;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    color: #F16D7F; 
+}
+
+.buybtn {
+    height: 43px;
+    width: 138px;
+}
+
+.top-pagination {
+    background: #F7F7F7;
+    background-image: url("img/woman5.png");
+    min-height: 777px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.top-line {
+    border: none; 
+    margin-bottom: 12px;
+    height: 3px;
+    width: 63px;
+
+    background-color: #EF5B70; 
+}
+
+.bottom-line {
+    border: none; 
+    height: 1px;
+    width: 641px;
+    margin-top: 65px;
+    margin-bottom: 65px;
+
+    background-color:#EAEAEA;  
+}
+
+

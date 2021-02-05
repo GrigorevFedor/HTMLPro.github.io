@@ -1,0 +1,182 @@
+$color1: #F1E4E6;
+$color4: #F16D7F;
+
+.brand-description {
+    min-height: 474px;
+    background: $color1;
+    padding: 290px 0 0 864px;
+    background-image: url("img/Layer57removebgpreview1.png");
+    background-repeat: no-repeat;
+
+
+    &-wrp {
+        border-left: 12px solid #F16D7F;
+        padding: 0 0 0 16px;
+    }
+
+    &-h {
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 58px;
+    }
+
+    &-text {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 38px;
+    }
+
+    &-text span {
+        color: $color4;
+    }
+}
+
+.main-content {
+    padding: 0 14% 0 14%;
+}
+
+
+.offer {
+    min-height: 470px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 65px 0 0 0;
+    margin-bottom: 96px;
+
+    &-item {
+        background-color: rgba(33, 22, 22, 0.7) ;
+        background-repeat: no-repeat; 
+        flex-basis: 360px; 
+        min-height: 155px; 
+        background-blend-mode: multiply; 
+        padding: 105px 0 0 0;
+        margin-bottom: 30px;
+    }
+    
+    &-for-woman {
+        background-image: url("img/woman.png"); 
+    }
+    
+    &-for-man {
+        background-image: url("img/man.png");  
+    }
+    
+    &-for-kids { 
+        background-image: url("img/kids.png");   
+    }
+    
+    &-accesories {
+        background-color: rgba(33, 22, 22, 0.7) ;
+        background-image: url("img/acces.png"); 
+        background-repeat: no-repeat; 
+        flex-basis: 100%;
+        min-height: 115px; 
+        background-blend-mode: multiply; 
+        padding: 65px 0 0 0;    
+    }
+    
+    &-top-text {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: center;
+        color: $color1;
+    }
+    
+    &-bot-text {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 29px;
+        text-align: center;
+        color: $color4;
+    }
+}
+
+
+
+.featured {
+    text-align: center;
+    padding: 0 0 95px 0;
+
+    &-header {
+        margin-bottom: 48px;
+    }
+    
+    &-header h1 {
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        margin-bottom: 6px; 
+    }
+    
+    &-header p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        color: #9F9F9F;
+    }
+}
+
+
+
+.special-offer {
+    min-height: 341px;
+    background-color: #222224;
+    display: flex;
+    justify-content: space-around;
+    padding: 103px 200px 104px 200px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+    &-item {
+        max-width: 360px;
+        color: #FBFBFB;
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding: 60px 0 0 0;
+        text-align: center;
+
+        & span {
+            display: block;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            margin: 0 0 16px 0;
+        }
+    
+        & span::first-letter {
+            text-transform: uppercase;
+        }
+    
+        & p {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 17px;
+        }
+    
+        &:nth-child(1) {
+            background-image: url("img/delivery.png");
+            
+        }
+    
+        &:nth-child(2) {
+            background-image: url("img/dicount.png");
+        }
+    
+        &:nth-child(3) {
+            background-image: url("img/assurance.png");
+        }
+    
+    }
+}
+
+
