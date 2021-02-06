@@ -1,0 +1,194 @@
+.cart {
+    padding: 96px 0 0 0;
+
+    &-top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-product {
+        flex: 0 0 652px;
+        
+
+        &-item {
+            display:  flex;
+            max-width: 652px;
+            margin: 0 0 40px 0;
+            box-shadow: 0.4em 0.4em 20px rgba(122,122,122,0.5);
+            position: relative;
+
+            &-h {
+                display: block;
+                margin: 0 0 42px 0;
+
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 29px;
+                text-align: left;
+                color: #222222;
+            }
+
+            &-delete {
+                position: absolute;
+                top: 28px;
+                right: 22px;
+
+            }
+
+            & img {
+                display: block;
+            }
+
+            &-wrp {
+                padding: 22px 97px 0 31px;
+    
+                & p {
+                    margin: 0 0 6px 0;
+
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px;
+                    text-align: left;
+                    color: #575757;
+                }
+    
+                & input {
+                    width: 43px;
+                    height: 24px;
+                    border: 1px solid #EAEAEA;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px;
+                    text-align: center;
+                }
+            }
+
+           
+        }
+
+        
+    }
+
+    &-checkout {
+        flex: 0 0 360px;
+        max-width: 360px;
+
+        & form {
+            margin: 0 0 57px 0;    
+        }
+
+        &-total {
+            width: 100%;
+            padding: 39px 42px 42px 44px;
+            box-sizing: border-box;
+
+            background: #F5F3F3;
+
+            & hr {
+                margin: 0 0 17px 0;
+
+                color: #E2E2E2;
+            }
+
+            &-proceed {
+                padding: 15px 0 16px 0;
+                width: 100%;
+
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 19px;
+                text-align: center;
+                background: #F16D7F;
+                color: #FFF;
+                border: none;
+            }
+
+            &-sub {
+                margin: 0 0 12px 0;
+
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 13px;
+                text-align: right; 
+            }
+
+            &-grand {
+                margin: 0 0 21px 0;
+
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 19px;
+                text-align: right;
+
+                & span {
+                    color: #F16D7F;
+                    font-weight: 700;
+                }
+            }
+
+        }
+
+        &-shipping {
+
+            &-h {
+                display: block;
+                margin: 0 0 20px 0;
+            }
+
+            & input {
+                display: block;
+                border: 1px solid #A4A4A4;
+                padding: 13px 17px 16px 17px;
+                width: 100%;
+                margin: 0 0 21px 0;
+                box-sizing: border-box;
+    
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 16px;
+                text-align: left;
+            }
+
+            & button {
+                border: 1px solid #A4A4A4;
+                padding: 10px 14px 12px 15px;
+
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 13px;
+                text-align: left;
+                color: #4A4A4A;
+                background: #FFFFFF;
+            }
+        }
+        
+    }
+
+    &-btns {
+        display: flex;
+        justify-content: space-between;
+        margin: 72px 0 128px 0;
+
+        & button{
+            padding: 16px 40px;
+
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 17px;
+            text-align: center;
+            color: #000000;
+            border: 1px solid #A4A4A4;
+            background: #FFF;
+        }
+    }
+}
+
