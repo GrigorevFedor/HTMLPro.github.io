@@ -1,3 +1,5 @@
+$color1: #F16D7F;
+$color2: #FFF;
 
 .registration {
     display: flex;
@@ -80,16 +82,6 @@
             text-align: left;
         }
 
-        & input[type='radio'] {
-            // font-size: 11px;
-            // font-style: normal;
-            // font-weight: 300;
-            // line-height: 13px;
-            // text-align: left;
-
-            
-        }
-
         & label {
             & input[type="radio"] {
                 display: none;
@@ -114,7 +106,7 @@
                 display: block;
                 width: 17px;
                 height: 17px;
-                background: #fff;
+                background: $color2;
                 margin-right: 10px;
                 border: 1px solid #A4A4A4;
                 border-radius: 50%;
@@ -124,7 +116,7 @@
                 transition: all 300ms ease-in-out;
               }  
             & input[type="radio"]:checked ~ span:before {
-                border: 5px solid #F16D7F;;
+                border: 5px solid $color1;
               }  
         }
         
@@ -145,21 +137,17 @@
             min-width: 167px;
 
             border: none;
-            background: #F16D7F;
-            color: #FFFFFF;
+            background: $color1;
+            color: $color2;
             text-transform: uppercase;
             text-align: left;
 
             & svg {
-                fill: #fff;
+                fill: $color2;
                 margin: 0 0 0 20px;
             }
         }
 
-
-    }
-
-    &-loyalty {
 
     }
 }

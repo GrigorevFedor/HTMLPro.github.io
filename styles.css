@@ -997,7 +997,7 @@
   display: block;
   width: 17px;
   height: 17px;
-  background: #fff;
+  background: #FFF;
   margin-right: 10px;
   border: 1px solid #A4A4A4;
   border-radius: 50%;
@@ -1026,13 +1026,13 @@
   min-width: 167px;
   border: none;
   background: #F16D7F;
-  color: #FFFFFF;
+  color: #FFF;
   text-transform: uppercase;
   text-align: left;
 }
 
 .registration-form button svg {
-  fill: #fff;
+  fill: #FFF;
   margin: 0 0 0 20px;
 }
 
