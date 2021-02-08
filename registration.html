@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/e9e3e5e7a1.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="nav">
+                <div class="nav-left-part">
+                    <a class="logo nav-right-margin " href="index.html"><img src="img/logo.png" alt="logo"></a>
+                        <form action="search" class="search-icon-form">
+                            <label for="search" class="search-icon-form__label">
+                                <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.0589 17.6251C20.6705 15.865 21.6275 13.6039 21.769 11.2216C21.9106 8.83932 21.2281 6.48088 19.8362 4.54232C18.4443 2.60377 16.4278 1.20318 14.1252 0.575765C11.8227 -0.0516554 9.37437 0.132305 7.19143 1.09675C5.0085 2.0612 3.22389 3.74739 2.1373 5.87217C1.05071 7.99695 0.728322 10.4309 1.22426 12.7653C1.72021 15.0997 3.00428 17.1923 4.86085 18.6919C6.71741 20.1914 9.0334 21.0064 11.4199 21.0001C13.6723 21.0031 15.8638 20.2691 17.6599 18.9101L25.4079 26.7171C25.4934 26.8061 25.5958 26.8772 25.7091 26.9261C25.8225 26.9751 25.9444 27.0009 26.0679 27.0021C26.1916 27.0024 26.314 26.9773 26.4276 26.9283C26.5411 26.8793 26.6434 26.8074 26.7279 26.7171C26.9018 26.5362 26.999 26.295 26.999 26.0441C26.999 25.7931 26.9018 25.5519 26.7279 25.371L19.0589 17.6251ZM2.88589 10.5001C2.89873 8.81477 3.41021 7.17101 4.35586 5.776C5.30151 4.38098 6.63899 3.29715 8.1997 2.66114C9.76042 2.02513 11.4745 1.86542 13.1258 2.20213C14.7772 2.53884 16.2919 3.3569 17.479 4.55319C18.6661 5.74948 19.4725 7.27044 19.7965 8.92433C20.1204 10.5782 19.9475 12.291 19.2995 13.8468C18.6515 15.4026 17.5574 16.7316 16.1551 17.6665C14.7529 18.6014 13.1052 19.1002 11.4199 19.1C9.14843 19.0892 6.97409 18.1775 5.3741 16.5652C3.77412 14.9528 2.87924 12.7715 2.88589 10.5001Z"/>
+                                </svg>    
+                            </label>
+                            <input class="search-icon-form__input" id="search" type="search">
+                        </form>     
+                </div>
+                
+                <nav class="nav-right-part">
+                    <input type="checkbox" id="checkbox" class="mobile-menu-checkbox">
+                    <label for="checkbox" class="mobile-menu-btn menu-btn nav-right-margin">
+                        <svg width="32" height="23" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z"/>
+                        </svg>
+                    </label>
+                    
+                    <a class="profile nav-right-margin" href="registration.html">
+                        <img src="img/contacts.png" alt="contacts">
+                    </a>
+                    <a href="cart.html" >
+                        <img src="img/cart.png" alt="cart">
+                    </a>
+                    <ul class="menu"> MENU
+                        <li >
+                            <ul class="menu-head">man
+                                <li class="menu-item">Accessories</li>
+                                <li class="menu-item">Bags</li>
+                                <li class="menu-item">Denim</li>
+                                <li class="menu-item">T-Shirts</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="menu-head">woman
+                                <li class="menu-item">Accessories</li>
+                                <li class="menu-item">Jackets & Coats</li>
+                                <li class="menu-item">Polos</li>
+                                <li class="menu-item">T-Shirts</li>
+                                <li class="menu-item">Shirts</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="menu-head">kids
+                                <li class="menu-item">Accessories</li>
+                                <li class="menu-item">Jackets & Coats</li>
+                                <li class="menu-item">Polos</li>
+                                <li class="menu-item">T-Shirts</li>
+                                <li class="menu-item">Shirts</li>
+                                <li class="menu-item">Bags</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </div>
+            <div class="catalog-header-content">
+                <span class="catalog-header-content-h">
+                    registration    
+                </span>  
+            </div>
+        </header>
+        <main>
+            <section class="main-content">
+                <div class="registration">
+                    <form class="registration-form">
+                        <span>your name</span>
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                        <label>
+                            <input type="radio" name="sex" value="male">
+                            <span>Male</span>
+                        </label>  
+                        <label>
+                            <input type="radio" name="sex" value="female">
+                            <span>Female</span>
+                        </label>  
+                        <span>login details</span>
+                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Password">
+                        <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                        <button type="submit">join now <svg width="17" height="10" viewBox="0 0 17 10" >
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z"/>
+                            </svg>
+                        </button>
+                    </form>
+                    <div class="registration-loyalty">
+                        <span>LOYALTY HAS ITS PERKS</span>
+                        <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+                        <ul>
+                            <li><svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"/>
+                                </svg>15% off welcome offer</li>
+                            <li><svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"/>
+                                </svg>Free shipping, returns and exchanges on all orders</li>
+                            <li><svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"/>
+                                </svg>$10 off a purchase on your birthday</li>
+                            <li><svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"/>
+                                </svg>Early access to products</li>
+                            <li><svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"/>
+                                </svg>Exclusive offers & rewards</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+            </section> 
+            <section class="special-offer">
+                <div class="special-offer-item">
+                    <span>free delivery</span>
+                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+                <div class="special-offer-item">
+                    <span>sales & discounts</span>
+                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+                <div class="special-offer-item">
+                    <span>quality assurance</span>
+                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+            </section>
+            <section class="subscribe">
+                <div class="subscribe-left">
+                    <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, 
+                        <span>a pulvinar purus condimentum“</span></p>
+                </div>
+                <div class="subscribe-right">
+                    <span>subscribe</span>
+                    <p> 
+                        for our newletteler and promotion
+                    </p>
+                    <form class="subscribe-form" action="">
+                        <input class="subscribe-form-email" type="email" placeholder="Enter Your Email" required>
+                        <input class="subscribe-form-btn" type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="page-footer">
+            <span>© 2021  Brand  All Rights Reserved.</span>
+            <div class="social">
+                <a href="" class="social-item fa fa-facebook"></a>
+                <a href="" class="social-item fa fa-instagram"></a>
+                <a href="" class="social-item fa fa-pinterest-p"></a>
+                <a href="" class="social-item fa fa-twitter"></a>    
+            </div>
+        </footer>
+        
+    </div>
+    
+</body>
+</html>

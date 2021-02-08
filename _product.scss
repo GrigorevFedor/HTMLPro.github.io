@@ -52,6 +52,10 @@ $color7: #F8F8F8;
             padding: 26px 29px 20px 17px;
             background: $color7;
             text-align: left;
+
+            & a {
+                text-decoration: none;
+            }
         }
 
         & img {

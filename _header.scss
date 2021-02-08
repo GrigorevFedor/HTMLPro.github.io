@@ -12,11 +12,21 @@ $color5: #6F6E6E;
     align-items: center;
     background: $color2;
 
+    & svg {
+        fill: #FFF;
+
+        &:hover {
+            fill: $color4;
+        }
+    }
+
     &-right-part{
         display: flex;
         align-items:flex-end;
         position: relative;
         min-height: 33px;
+
+        
     }
     
     &-right-margin  {
@@ -85,16 +95,27 @@ $color5: #6F6E6E;
     line-height: 17px;
     list-style-type: none; 
 
-    &-head {    
+    & span {
+        display: block;
+        margin: 0 0 24px 0;
+    }
+
+    &-head { 
+        padding: 12px 0 0 0;  
+        margin: 0 0 12px 0;
+        
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: 17px;
         list-style-type: none;
         color: $color4;
+        text-transform: uppercase;
     }
 
     &-item {
+        margin: 0 0 11px 0;
+
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -117,8 +138,8 @@ $color5: #6F6E6E;
         width: 35px;
         height: 30px;
         cursor: pointer;
-        background-image: url("img/menu.png");
-        background-repeat: no-repeat;
+        // background-image: url("img/menu.png");
+        // background-repeat: no-repeat;
     }
     
     &-checkbox {
