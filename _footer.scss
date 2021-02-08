@@ -69,6 +69,10 @@
             color: #222224;
             padding: 7px 22px;
             min-width: 256px;
+
+            &:focus {
+                outline: none;    
+            }
         }
     
         &-btn {
