@@ -75,11 +75,13 @@
   background: #FFFFFF;
   padding: 37px 0 0 34px;
   display: none;
-  list-style-type: none;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 17px;
+}
+
+.menu ul {
   list-style-type: none;
 }
 
@@ -90,7 +92,6 @@
 
 .menu-head {
   padding: 12px 0 0 0;
-  margin: 0 0 12px 0;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -131,6 +132,7 @@
 .subscribe {
   min-height: 448px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 97px 327px 0 228px;
   box-sizing: border-box;
@@ -261,7 +263,7 @@
 .brand-description {
   min-height: 474px;
   background: #F1E4E6;
-  padding: 290px 0 0 864px;
+  padding: 290px 0 0 54%;
   background-image: url("img/Layer57removebgpreview1.png");
   background-repeat: no-repeat;
 }
@@ -305,7 +307,7 @@
 .offer-item {
   background-color: rgba(33, 22, 22, 0.7);
   background-repeat: no-repeat;
-  flex-basis: 360px;
+  flex: 0 1 360px;
   min-height: 155px;
   background-blend-mode: multiply;
   padding: 105px 0 0 0;
@@ -997,7 +999,7 @@
   display: block;
   width: 17px;
   height: 17px;
-  background: #fff;
+  background: #FFF;
   margin-right: 10px;
   border: 1px solid #A4A4A4;
   border-radius: 50%;
@@ -1026,13 +1028,13 @@
   min-width: 167px;
   border: none;
   background: #F16D7F;
-  color: #FFFFFF;
+  color: #FFF;
   text-transform: uppercase;
   text-align: left;
 }
 
 .registration-form button svg {
-  fill: #fff;
+  fill: #FFF;
   margin: 0 0 0 20px;
 }
 

@@ -2,6 +2,7 @@
 .subscribe {
     min-height: 448px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 97px 327px 0 228px;
     box-sizing: border-box;

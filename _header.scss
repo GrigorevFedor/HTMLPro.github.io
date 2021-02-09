@@ -87,13 +87,15 @@ $color5: #6F6E6E;
     padding: 37px 0 0 34px;
     
     display: none;
-    list-style-type: none;
+    
 
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 17px;
-    list-style-type: none; 
+    & ul {
+        list-style-type: none;
+    }
 
     & span {
         display: block;
@@ -102,7 +104,6 @@ $color5: #6F6E6E;
 
     &-head { 
         padding: 12px 0 0 0;  
-        margin: 0 0 12px 0;
         
         font-size: 14px;
         font-style: normal;
