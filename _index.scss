@@ -4,7 +4,7 @@ $color4: #F16D7F;
 .brand-description {
     min-height: 474px;
     background: $color1;
-    padding: 290px 0 0 864px;
+    padding: 290px 0 0 54%;
     background-image: url("img/Layer57removebgpreview1.png");
     background-repeat: no-repeat;
 
@@ -49,7 +49,7 @@ $color4: #F16D7F;
     &-item {
         background-color: rgba(33, 22, 22, 0.7) ;
         background-repeat: no-repeat; 
-        flex-basis: 360px; 
+        flex: 0 1 360px; 
         min-height: 155px; 
         background-blend-mode: multiply; 
         padding: 105px 0 0 0;
