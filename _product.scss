@@ -22,6 +22,7 @@ $color7: #F8F8F8;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin: 0 -15px;
 
         & h2 {
             font-size: 13px;
@@ -34,10 +35,15 @@ $color7: #F8F8F8;
     }
 
     &-item {
-        background-color: $color5;
-        flex: 0 1 360px;
+        // background-color: $color5;
+        // flex: 0 1 360px;
+        flex-shrink: 1;
+        padding: 0 15px;
+        width: 33%;
+        box-sizing: border-box;
         margin-bottom: 30px;
         position: relative;
+        overflow: hidden;
 
         &-addtocart {
             height: 43px;
@@ -60,16 +66,25 @@ $color7: #F8F8F8;
 
         & img {
             display:block;
+            width: 100%;
+            height: auto;
         }
         
-        &-wrp:hover img{
-            filter: brightness(33%);
-            transition-duration: 80ms;
+        &-wrp {
+            text-align: center;
+
+            &:hover img{
+                filter: brightness(33%);
+                transition-duration: 80ms;
+            }
+            
+            &:hover button{
+                display: block;
+            }
+
         }
+
         
-        &-wrp:hover button{
-            display: block;
-        }
     }  
 
     &-description {
@@ -210,5 +225,4 @@ $color7: #F8F8F8;
 
     background-color:#EAEAEA;  
 }
-
 

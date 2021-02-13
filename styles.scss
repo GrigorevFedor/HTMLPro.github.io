@@ -12,10 +12,11 @@ $mainfontfamily: Lato;
 @import "_catalog";
 @import "_cart";
 @import "_registration.scss";
+@import "_media.scss";
 
 * {
-    margin: 0;
-    padding: 0;
+    // margin: 0;
+    // padding: 0;
     font-family: $mainfontfamily;
 }
 

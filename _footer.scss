@@ -4,19 +4,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 97px 327px 0 228px;
+    padding: 0 14%;
     box-sizing: border-box;
+    margin: 0 auto;
+
     background-image: url("img/Layer\ 41.png");
     background-color:rgba(244, 244, 244, 0.7); ;
     background-blend-mode:lighten; 
 
     &-left {
+        
         max-width: 310px;
         background-image: url("img/baba.png");
         background-repeat: no-repeat;
         background-position: top center;
         padding: 126px 0 0 0;
         text-align: center;
+        margin: 0 auto;
+       
 
         font-size: 20px;
         font-style: normal;
@@ -29,9 +34,11 @@
     }
 
     &-right {
-        max-width: 370px;
+        // max-width: 370px;
         text-align: center;
-        padding: 53px 0 0 0;   
+        // padding: 53px 0 0 0; 
+        margin: 0 auto; 
+        
         
         & span {
             font-size: 24px;
@@ -54,6 +61,8 @@
     &-form {
         display: flex;
         flex-wrap: nowrap;
+        margin: 0 auto;
+        max-width: 356px;
         
         font-size: 14px;
         font-style: normal;
@@ -62,28 +71,34 @@
         letter-spacing: 0em;
 
         &-email {
+            display: block;
             min-height: 49px;
             border: none;
             border-radius: 24px 0 0 24px;
-            box-sizing: border-box;
+            box-sizing: border-box;       
+            padding: 7px 22px;
+            // max-width: 256px;
+            flex-grow: 5;
+
             background: #E1E1E1;
             color: #222224;
-            padding: 7px 22px;
-            min-width: 256px;
-
+            
             &:focus {
                 outline: none;    
             }
         }
     
         &-btn {
+            display: block;
             min-height: 49px;
-            background: #F16D7F;
             border-radius: 0 24px 24px 0;
-            color: #FFFFFF;
             border: none;
             box-sizing: border-box;
             padding: 7px 22px;
+            flex-grow: 2;
+
+            background: #F16D7F;
+            color: #FFFFFF;
         }
     } 
 }
@@ -91,15 +106,16 @@
 .page-footer {
     min-height: 79px; 
     background: #222224; 
-    padding: 30px 235px 0 235px;  
+    padding: 30px 14%;  
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
+    
 
     & span {
-        display: block;  
+        display: block; 
+        
         color: #FBFBFB;
-       
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
