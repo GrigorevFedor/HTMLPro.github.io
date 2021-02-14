@@ -1,19 +1,22 @@
 
 .subscribe {
-    min-height: 448px;
+    max-height: 663px;
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 14%;
+    padding: 86px 14% 14% 14%;
     box-sizing: border-box;
     margin: 0 auto;
+    align-items: flex-start;
 
-    background-image: url("img/Layer\ 41.png");
-    background-color:rgba(244, 244, 244, 0.7); ;
-    background-blend-mode:lighten; 
+    background-image: linear-gradient(rgba(244,244,244, 0.7), rgba(244,244,244, 0.7)), 
+                    url("img/Layer\ 41.png");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-color: #F3EEEF;
 
     &-left {
-        
         max-width: 310px;
         background-image: url("img/baba.png");
         background-repeat: no-repeat;
@@ -104,7 +107,8 @@
 }
 
 .page-footer {
-    min-height: 79px; 
+    min-height: 79px;
+    max-height: 143px; 
     background: #222224; 
     padding: 30px 14%;  
     display: flex;
