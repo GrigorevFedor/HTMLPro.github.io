@@ -1,18 +1,25 @@
 .cart {
     padding: 96px 0 0 0;
+    margin: 0 -3%;
 
     &-top {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &-margin {
+        margin: 0 3%;
     }
 
     &-product {
-        flex: 0 0 652px;
+        // width: 57%;
+        flex: 1 1 652px;
+        padding: 0 0 64px 0;
         
 
         &-item {
             display:  flex;
-            max-width: 652px;
             margin: 0 0 40px 0;
             box-shadow: 0.4em 0.4em 20px rgba(122,122,122,0.5);
             position: relative;
@@ -36,12 +43,16 @@
 
             }
 
-            & img {
+            &-image {
                 display: block;
+                width: 40%;
+                max-width: 262px;
+                height: auto;
+                object-fit: cover;
             }
 
             &-wrp {
-                padding: 22px 97px 0 31px;
+                padding: 22px 30px 0 31px;
     
                 & p {
                     margin: 0 0 6px 0;
@@ -73,8 +84,9 @@
     }
 
     &-checkout {
-        flex: 0 0 360px;
-        max-width: 360px;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 360px;
 
         & form {
             margin: 0 0 57px 0;    
@@ -84,6 +96,7 @@
             width: 100%;
             padding: 39px 42px 42px 44px;
             box-sizing: border-box;
+            margin: 0 0 96px 0;
 
             background: #F5F3F3;
 
@@ -175,10 +188,13 @@
     &-btns {
         display: flex;
         justify-content: space-between;
-        margin: 72px 0 128px 0;
+        
 
         & button{
             padding: 16px 40px;
+            min-width: 94px;
+            box-sizing: border-box;
+            margin: 0 3%;
 
             font-size: 14px;
             font-style: normal;

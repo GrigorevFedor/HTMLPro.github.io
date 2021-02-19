@@ -92,6 +92,8 @@ $color7: #F8F8F8;
         margin: auto;
         position: relative;
         top: -65px;
+        box-sizing: border-box;
+        margin: 0 0 64px 0;
 
         background: #FFF;
         border: 1px solid #EAEAEA;
@@ -136,19 +138,29 @@ $color7: #F8F8F8;
     
     &-filter {
         min-height: 132px;
-        max-width: 555px;
+        // max-width: 555px;
         display: flex;
         justify-content: space-between;
         box-sizing: border-box;
         padding: 51px 0 64px 0;
 
-        &-header {
-            display: block;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 17px;
-            color: #000;
+        &-main {
+            display: flex;
+        
+            &-header {
+                display: block;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 17px;
+                color: #000;
+                margin: 0 11px 0 0;
+            }
+
+            &-icon {
+                fill: black;
+                margin: 4px 0 0 0;
+            }
         }
         // &-items {
         //     display: flex;
@@ -156,11 +168,18 @@ $color7: #F8F8F8;
 
         &-items {
             display: flex;
+            justify-content: space-between;
             max-width: 500px;
-            margin-bottom: 49px;
+            
+            &-margin {
+                margin-bottom: 49px;
+            }
         }
 
         &-item {
+            padding-right: 20px;
+           
+
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
@@ -169,8 +188,10 @@ $color7: #F8F8F8;
             background-image: url("img/filterbutton.png");
             background-repeat: no-repeat;
             background-position: right 7px;
-            padding-right: 20px;
-            margin-right: 28px;
+
+            &-margin {
+                margin-right: 28px;
+            }
         }
     }
 }
@@ -219,7 +240,7 @@ $color7: #F8F8F8;
 .bottom-line {
     border: none; 
     height: 1px;
-    width: 641px;
+    width: 40%;
     margin-top: 65px;
     margin-bottom: 65px;
 

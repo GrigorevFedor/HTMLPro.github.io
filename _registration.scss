@@ -6,9 +6,16 @@ $color2: #FFF;
     justify-content: space-between;
     padding: 64px 0 96px 0;
     box-sizing: border-box;
+    margin: 0 -11px;
+    align-items:unset;
+
+    &-margin {
+        margin: 0 11px;
+    }
 
     &-loyalty {
-        flex: 0 0 652px;  
+        flex: 0 1 652px; 
+        
         
         & span {
             display: block;
@@ -32,12 +39,14 @@ $color2: #FFF;
         }
 
         & ul {
-            list-style-position: inside;
+            list-style-position: outside;
             list-style-type: none;
+            padding-left: 70px;
         }
 
         & li {
-            margin: 0 0 18px 0;
+            margin: 0 0 16px 0;
+            list-style-image: url(img/li.png);
 
             font-size: 24px;
             font-style: normal;
@@ -53,8 +62,9 @@ $color2: #FFF;
     }
 
     &-form {
-        flex: 0 0 360px;
-
+        flex: 0 1 360px;
+        // min-width: 50%;
+        max-width: 360px;
         & span {
             display: block;
             text-transform: capitalize;

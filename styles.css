@@ -529,6 +529,8 @@
   margin: auto;
   position: relative;
   top: -65px;
+  box-sizing: border-box;
+  margin: 0 0 64px 0;
   background: #FFF;
   border: 1px solid #EAEAEA;
   padding: 65px 0 65px 0;
@@ -568,29 +570,43 @@
 
 .product-filter {
   min-height: 132px;
-  max-width: 555px;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   padding: 51px 0 64px 0;
 }
 
-.product-filter-header {
+.product-filter-main {
+  display: flex;
+}
+
+.product-filter-main-header {
   display: block;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 17px;
   color: #000;
+  margin: 0 11px 0 0;
+}
+
+.product-filter-main-icon {
+  fill: black;
+  margin: 4px 0 0 0;
 }
 
 .product-filter-items {
   display: flex;
+  justify-content: space-between;
   max-width: 500px;
+}
+
+.product-filter-items-margin {
   margin-bottom: 49px;
 }
 
 .product-filter-item {
+  padding-right: 20px;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -599,7 +615,9 @@
   background-image: url("img/filterbutton.png");
   background-repeat: no-repeat;
   background-position: right 7px;
-  padding-right: 20px;
+}
+
+.product-filter-item-margin {
   margin-right: 28px;
 }
 
@@ -645,7 +663,7 @@
 .bottom-line {
   border: none;
   height: 1px;
-  width: 641px;
+  width: 40%;
   margin-top: 65px;
   margin-bottom: 65px;
   background-color: #EAEAEA;
@@ -674,8 +692,9 @@
   min-height: 148px;
   background: #F8F3F4;
   display: flex;
-  justify-content: space-between;
-  padding: 59px 230px 0 230px;
+  flex-wrap: wrap;
+  justify-content: spa;
+  padding: 59px 14% 0 14%;
   box-sizing: border-box;
 }
 
@@ -756,20 +775,26 @@
 
 .cart {
   padding: 96px 0 0 0;
+  margin: 0 -3%;
 }
 
 .cart-top {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cart-margin {
+  margin: 0 3%;
 }
 
 .cart-product {
-  flex: 0 0 652px;
+  flex: 1 1 652px;
+  padding: 0 0 64px 0;
 }
 
 .cart-product-item {
   display: flex;
-  max-width: 652px;
   margin: 0 0 40px 0;
   box-shadow: 0.4em 0.4em 20px rgba(122, 122, 122, 0.5);
   position: relative;
@@ -792,12 +817,16 @@
   right: 22px;
 }
 
-.cart-product-item img {
+.cart-product-item-image {
   display: block;
+  width: 40%;
+  max-width: 262px;
+  height: auto;
+  object-fit: cover;
 }
 
 .cart-product-item-wrp {
-  padding: 22px 97px 0 31px;
+  padding: 22px 30px 0 31px;
 }
 
 .cart-product-item-wrp p {
@@ -822,8 +851,9 @@
 }
 
 .cart-checkout {
-  flex: 0 0 360px;
-  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 360px;
 }
 
 .cart-checkout form {
@@ -834,6 +864,7 @@
   width: 100%;
   padding: 39px 42px 42px 44px;
   box-sizing: border-box;
+  margin: 0 0 96px 0;
   background: #F5F3F3;
 }
 
@@ -912,11 +943,13 @@
 .cart-btns {
   display: flex;
   justify-content: space-between;
-  margin: 72px 0 128px 0;
 }
 
 .cart-btns button {
   padding: 16px 40px;
+  min-width: 94px;
+  box-sizing: border-box;
+  margin: 0 3%;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -932,10 +965,16 @@
   justify-content: space-between;
   padding: 64px 0 96px 0;
   box-sizing: border-box;
+  margin: 0 -11px;
+  align-items: unset;
+}
+
+.registration-margin {
+  margin: 0 11px;
 }
 
 .registration-loyalty {
-  flex: 0 0 652px;
+  flex: 0 1 652px;
 }
 
 .registration-loyalty span {
@@ -958,12 +997,14 @@
 }
 
 .registration-loyalty ul {
-  list-style-position: inside;
+  list-style-position: outside;
   list-style-type: none;
+  padding-left: 70px;
 }
 
 .registration-loyalty li {
-  margin: 0 0 18px 0;
+  margin: 0 0 16px 0;
+  list-style-image: url(img/li.png);
   font-size: 24px;
   font-style: normal;
   font-weight: 300;
@@ -977,7 +1018,8 @@
 }
 
 .registration-form {
-  flex: 0 0 360px;
+  flex: 0 1 360px;
+  max-width: 360px;
 }
 
 .registration-form span {
@@ -1072,6 +1114,13 @@
   .product-item {
     width: 50%;
   }
+  .product-item:last-child:nth-child(2n+1) {
+    display: none;
+  }
+  .product-description {
+    top: 0;
+    margin: 0 0 129px 0;
+  }
   .offer {
     flex-direction: column;
     margin: 0;
@@ -1108,11 +1157,69 @@
   .social {
     margin: 0 0 40px 0;
   }
+  .catalog-header-content {
+    padding: 60px 4%;
+  }
+  .cart {
+    margin: 0;
+  }
+  .cart-margin {
+    margin: 0;
+  }
+  .cart-btns {
+    justify-content: center;
+  }
+  .registration {
+    margin: 0;
+  }
+  .registration-margin {
+    margin: 0;
+  }
+  .registration-loyalty {
+    max-width: 49%;
+  }
+  .registration-loyalty span {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration-loyalty p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration-loyalty ul {
+    padding-left: 28px;
+  }
+  .registration-loyalty li {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration-form {
+    max-width: 49%;
+  }
 }
 
 @media (max-width: 375px) {
+  .header-content-h {
+    margin: 0 auto;
+  }
   .product-item {
     width: 100%;
+  }
+  .product-filter-main {
+    align-items: center;
+  }
+  .product-filter-main-header {
+    display: none;
+  }
+  .product-filter-main-icon {
+    width: 30px;
+    height: auto;
+  }
+  .product-filter-item {
+    font-size: 12px;
+  }
+  .product-filter-item-margin {
+    margin-right: 23px;
   }
   .nav-right-part {
     justify-content: flex-end;
@@ -1123,9 +1230,72 @@
   .nav-right-part-cart {
     display: none;
   }
+  .catalog-header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cart {
+    margin: 0;
+  }
+  .cart-margin {
+    margin: 0;
+  }
+  .cart-product-item-h {
+    font-size: 16px;
+    margin: 0 0 25px 0;
+  }
+  .cart-product-item-wrp {
+    padding: 13px 30px 0 17px;
+  }
+  .cart-product-item-wrp p {
+    font-size: 14px;
+    margin: 0 0 4px 0;
+    line-height: 17px;
+  }
+  .cart-product-item-wrp input {
+    font-size: 10px;
+    height: 14px;
+  }
+  .cart-product-item-delete {
+    width: 10px;
+    right: 12px;
+  }
+  .cart-btns {
+    justify-content: space-between;
+  }
+  .cart-btns button {
+    width: 49%;
+    padding: 6px;
+    line-height: 14px;
+    font-size: 12px;
+  }
+  .registration {
+    flex-direction: column;
+  }
+  .registration-loyalty {
+    max-width: 100%;
+    flex-basis: unset;
+  }
+  .registration-loyalty span {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration-loyalty p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration-loyalty li {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration-form {
+    max-width: 100%;
+    padding: 0 0 40px 0;
+  }
 }
 
-* {
+body {
+  margin: 0;
   font-family: Lato;
 }
 

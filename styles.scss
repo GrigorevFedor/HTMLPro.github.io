@@ -14,8 +14,8 @@ $mainfontfamily: Lato;
 @import "_registration.scss";
 @import "_media.scss";
 
-* {
-    // margin: 0;
+body {
+    margin: 0;
     // padding: 0;
     font-family: $mainfontfamily;
 }
@@ -29,3 +29,4 @@ $mainfontfamily: Lato;
     margin-left: auto;
     margin-right: auto;
 }
+

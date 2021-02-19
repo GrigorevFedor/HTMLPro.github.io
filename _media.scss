@@ -1,6 +1,4 @@
 
-// много вопросов
-
 @media (max-width: 768px) {
     .main-content {
         padding: 0 4%;
@@ -9,6 +7,14 @@
     .product {  
         &-item {
             width: 50%;
+            &:last-child:nth-child(2n+1) {
+                display: none;
+            }
+        }
+
+        &-description {
+            top: 0;
+            margin: 0 0 129px 0;
         }
     } 
 
@@ -61,13 +67,109 @@
     .social {
         margin: 0 0 40px 0;
     }
+
+    .catalog {
+
+        &-header-content {
+            padding: 60px 4%;
+        }
+    }
+
+    .cart {
+        margin: 0;
+
+        &-margin {
+            margin: 0;
+        }
+
+        &-btns {
+            justify-content: center;
+    
+            & button{
+                
+            }
+        }     
+    }  
+    
+    .registration {
+        
+        margin: 0;
+    
+        &-margin {
+            margin: 0;
+        }
+    
+        &-loyalty {
+            max-width: 49%;  
+            
+            & span {
+                font-size: 16px;
+                line-height: 19px;
+            }
+    
+            & p {
+                font-size: 16px;          
+                line-height: 19px;
+            }
+    
+            & ul {
+                padding-left: 28px;        
+            }
+    
+            & li {
+               
+                font-size: 16px;             
+                line-height: 19px;
+            }
+        }
+
+        &-form { 
+            max-width: 49%;
+        }
+    }
+    
 }  
 
 @media (max-width: 375px) {
+    .header {
+        &-content {
+            &-h {
+                margin: 0 auto;
+            }
+        }
+    }
+   
     .product {  
         &-item {
             width: 100%;
+             
         }
+
+        &-filter {
+            
+    
+            &-main {
+                align-items: center;
+                
+            
+                &-header {
+                    display: none;
+                }
+    
+                &-icon {
+                    width: 30px;
+                    height: auto;    
+                }
+            }
+
+            &-item {
+                font-size: 12px;
+               
+                &-margin {
+                    margin-right: 23px;
+                }
+            }    
+        }    
     } 
 
     .nav {
@@ -81,6 +183,99 @@
             &-cart {
                 display: none;
             }
+        }
+    }
+
+    .catalog {
+
+        &-header-content {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .cart {
+        margin: 0;
+
+        &-margin {
+            margin: 0;
+        }
+
+        &-product {
+            &-item {
+                &-h {
+                    font-size: 16px;
+                    margin: 0 0 25px 0;
+                }
+
+                &-wrp {
+                    padding: 13px 30px 0 17px;
+        
+                    & p {                    
+                        font-size: 14px;
+                        margin: 0 0 4px 0;
+                        line-height: 17px;
+                    }
+        
+                    & input {
+                        font-size: 10px;
+                        height: 14px;
+                    }
+                } 
+                
+                &-delete {
+                    width: 10px;
+                    right: 12px;
+                }
+            }    
+        }
+
+        &-btns {
+            justify-content: space-between;
+            & button{
+                width: 49%;
+                padding: 6px;
+                line-height: 14px;
+                font-size: 12px;
+            }
+        }        
+    }
+
+    .registration {
+        
+        flex-direction: column;
+       
+    
+        &-margin {
+            
+        }
+    
+        &-loyalty {
+            max-width: 100%;  
+            flex-basis: unset;
+            & span {
+                font-size: 16px;
+                line-height: 19px;
+            }
+    
+            & p {
+                font-size: 16px;          
+                line-height: 19px;
+            }
+    
+            & ul {
+                
+            }
+    
+            & li {
+                font-size: 16px;             
+                line-height: 19px;
+            }
+        }
+
+        &-form { 
+            max-width: 100%;
+            padding: 0 0 40px 0;  
         }
     }
 }

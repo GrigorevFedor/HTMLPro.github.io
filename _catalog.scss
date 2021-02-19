@@ -24,8 +24,9 @@
         min-height: 148px;
         background: #F8F3F4;
         display: flex;
-        justify-content: space-between;
-        padding: 59px 230px 0 230px;
+        flex-wrap: wrap;
+        justify-content: spa;
+        padding: 59px 14% 0 14%;
         box-sizing: border-box;
         
         &-h {
